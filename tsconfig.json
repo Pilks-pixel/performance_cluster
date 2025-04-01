@@ -1,13 +1,13 @@
 {
-	"compilerOptions": {
-		"noEmit": true,
-		"baseUrl": ".",
-		"allowImportingTsExtensions": true,
-		"module": "es2020",
-		"moduleResolution": "node",
-		"allowSyntheticDefaultImports": true,
-		"target": "es2020",
-		"declaration": true,
-		"esModuleInterop": true
-	}
+  "compilerOptions": {
+    "noEmit": true,
+    "baseUrl": ".",
+    "allowImportingTsExtensions": true,
+    "module": "es2020",
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "target": "es2020",
+    "declaration": true,
+    "esModuleInterop": true
+  }
 }
