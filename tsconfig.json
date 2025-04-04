@@ -1,13 +1,16 @@
 {
   "compilerOptions": {
-    "noEmit": true,
-    "baseUrl": ".",
-    "allowImportingTsExtensions": true,
-    "module": "es2020",
-    "moduleResolution": "node",
-    "allowSyntheticDefaultImports": true,
-    "target": "es2020",
-    "declaration": true,
-    "esModuleInterop": true
-  }
+    "outDir": "./dist", // Output directory for transpiled JavaScript files
+    "module": "es2020", // Module system to use
+    "target": "es2020", // JavaScript version to target
+    "moduleResolution": "node", // Resolve modules using Node.js conventions
+    "allowSyntheticDefaultImports": true, // Allow default imports from modules with no default export
+    "esModuleInterop": true, // Enable interoperability between CommonJS and ES modules
+    "declaration": true, // Generate `.d.ts` declaration files
+    "sourceMap": true, // Generate source maps for debugging
+    "strict": true, // Enable all strict type-checking options
+    "baseUrl": "." // Base directory for resolving non-relative module names
+  },
+  "include": ["./server.ts"], // Files to include in the compilation
+  "exclude": ["node_modules"] // Files to exclude from the compilation
 }
