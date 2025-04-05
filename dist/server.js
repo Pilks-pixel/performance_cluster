@@ -13,7 +13,7 @@ app.get("/", function (req, res) {
 });
 app.get("/timer", function (req, res) {
   delay(5000);
-  res.send(`ding ding ding ${process.pid}`);
+  res.send(`beep beep beep ${process.pid}`);
 });
 // if (cluster.isPrimary) {
 //   console.log(`Master ${process.pid} is running`);
