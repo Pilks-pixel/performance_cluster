@@ -1,12 +1,12 @@
 import express from "express";
 import { createServer } from "node:http";
 // import cluster from "node:cluster";
-import { cpus } from "node:os";
+// import { cpus } from "node:os";
 var app = express();
 var server = createServer(app);
 var PORT = process.env.PORT || 3000;
-var numCPUs = cpus().length;
-console.log(`${numCPUs} CPUs available`);
+// var numCPUs = cpus().length;
+// console.log(`${numCPUs} CPUs available`);
 app.use(express.json());
 app.get("/", function (req, res) {
   res.send(`Hello World! ${process.pid}`);
